@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Christmas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- SCREEN 1 -->
+  <section class="screen active" id="screen-1">
+    <div class="center">
+      <h1>Hey there, it’s Christmas.</h1>
+      <p>How about an early check-in?</p>
+      <button class="primary" onclick="goTo(2)">Proceed 🌷</button>
+    </div>
+  </section>
+
+  <!-- MCQ INTRO -->
+  <section class="screen" id="screen-2">
+    <div class="center">
+      <p class="hint">Answer these to open your Christmas gift 🎁</p>
+
+      <h2>What describes you best?</h2>
+
+      <div class="options">
+        <button onclick="goTo(3)">✨ As bright as the stars</button>
+        <button onclick="goTo(3)">🌙 As beautiful as the moon</button>
+        <button onclick="goTo(3)">🌷 Someone who feels like comfort</button>
+        <button onclick="goTo(3)">All of the above</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MCQ 2 -->
+  <section class="screen" id="screen-3">
+    <div class="center">
+      <h2>What’s your real superpower?</h2>
+
+      <div class="options">
+        <button onclick="goTo(4)">Making people smile without trying</button>
+        <button onclick="goTo(4)">Turning normal moments into memories</button>
+        <button onclick="goTo(4)">Being effortlessly yourself</button>
+        <button onclick="goTo(4)">All of these (obviously)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MCQ 3 -->
+  <section class="screen" id="screen-4">
+    <div class="center">
+      <h2>What kind of vibe do you carry?</h2>
+
+      <div class="options">
+        <button onclick="goTo(5)">Calm and peaceful</button>
+        <button onclick="goTo(5)">Warm and familiar</button>
+        <button onclick="goTo(5)">Slightly mischievous</button>
+        <button onclick="goTo(5)">Somehow… all of it</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSITION -->
+  <section class="screen" id="screen-5">
+    <div class="center">
+      <h1>Gift unlocked 🎁</h1>
+      <p class="sub">(Your hair looks gorgeous. Don’t listen to anyone.)</p>
+      <button class="primary" onclick="goTo(6)">Open it</button>
+    </div>
+  </section>
+
+  <!-- FINAL SCREEN -->
+  <section class="screen" id="screen-6">
+    <div class="sunflower"></div>
+
+    <div class="final">
+      <p class="line">This Christmas</p>
+      <p class="line">feels softer than before,</p>
+      <p class="line">maybe it’s the lights,</p>
+      <p class="line">maybe the quiet it brings</p>
+      <p class="line">or maybe it’s you</p>
+      <p class="line">I find myself thinking of more.</p>
+
+      <br>
+
+      <p class="line">I didn’t plan this feeling,</p>
+      <p class="line">it quietly grew,</p>
+      <p class="line">some moments just arrive</p>
+      <p class="line">without meaning to.</p>
+
+      <br>
+
+      <p class="line">I’m smiling this Christmas,</p>
+      <p class="line">warm and sincere,</p>
+      <p class="line">and yes</p>
+      <p class="line">you’re part of the reason it feels so dear.</p>
+
+      <br>
+
+      <p class="line signature">Merry Christmas, Purnima.</p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+:root {
+  --bg: #fff8f0;
+  --accent: #ffd6e0;
+  --text: #2f2f2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  max-width: 412px;
+  margin-inline: auto;
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  overflow: hidden;
+}
+
+.screen {
+  height: 100vh;
+  display: none;
+}
+
+.screen.active {
+  display: flex;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  padding: 28px;
+}
+
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hint {
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.primary {
+  margin-top: 24px;
+  padding: 12px 26px;
+  border-radius: 24px;
+  border: none;
+  background: var(--accent);
+  font-size: 15px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.options button {
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+  background: white;
+  font-size: 14px;
+}
+
+.sub {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* FINAL SCREEN */
+
+#screen-6 {
+  position: relative;
+}
+
+.sunflower {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center,
+      rgba(255, 200, 80, 0.25),
+      rgba(255, 200, 80, 0.08),
+      transparent 65%);
+  filter: blur(18px);
+}
+
+.final {
+  position: relative;
+  padding: 40px 28px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.line {
+  opacity: 0;
+  animation: fade 0.6s ease forwards;
+}
+
+.signature {
+  font-size: 22px;
+  margin-top: 12px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
